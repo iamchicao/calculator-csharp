@@ -20,6 +20,18 @@ public class Calculator {
   {
     return number1 + number2;
   }
-
-
 }
+
+//Example
+/* class Program {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+        Console.WriteLine(Sum(2, 3));
+    }
+    
+    static float Sum(float number1, float number2)
+    {
+      return number1 + number2;
+    }
+}
+*/
