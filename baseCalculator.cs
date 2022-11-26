@@ -14,11 +14,29 @@ public class Calculator {
   public void Operations()
   {
      Console.WriteLine($"{Sum(2, 3)}");
+     Console.WriteLine($"{Subtraction(2, 3)}");
+     Console.WriteLine($"{Multiplication(2, 3)}");
+     Console.WriteLine($"{Division(2, 3)}");
   }
 
   public float Sum(float number1, float number2)
   {
     return number1 + number2;
+  }
+  
+  public float Subtraction(float number1, float number2)
+  {
+    return number1 - number2;
+  }
+
+  public float Multiplication(float number1, float number2)
+  {
+    return number1 * number2;
+  }
+
+  public float Division(float number1, float number2)
+  {
+    return number1 / number;
   }
 }
 
