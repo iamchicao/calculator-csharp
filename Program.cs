@@ -1,0 +1,3 @@
+﻿using CalculatorCsharp;
+
+Main.Start();

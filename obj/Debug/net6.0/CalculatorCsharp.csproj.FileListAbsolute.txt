@@ -1,0 +1,15 @@
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\CalculatorCsharp.exe
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\CalculatorCsharp.deps.json
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\CalculatorCsharp.runtimeconfig.json
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\CalculatorCsharp.dll
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\CalculatorCsharp.pdb
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.csproj.AssemblyReference.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.AssemblyInfoInputs.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.AssemblyInfo.cs
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.csproj.CoreCompileInputs.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.dll
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\refint\CalculatorCsharp.dll
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.pdb
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\CalculatorCsharp.genruntimeconfig.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\ref\CalculatorCsharp.dll

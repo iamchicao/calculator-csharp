@@ -1,0 +1,15 @@
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\calculator_csharp.exe
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\calculator_csharp.deps.json
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\calculator_csharp.runtimeconfig.json
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\calculator_csharp.dll
+C:\Users\CarolineSouza\Documents\calculator_csharp\bin\Debug\net6.0\calculator_csharp.pdb
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.csproj.AssemblyReference.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.AssemblyInfoInputs.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.AssemblyInfo.cs
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.csproj.CoreCompileInputs.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.dll
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\refint\calculator_csharp.dll
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.pdb
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\calculator_csharp.genruntimeconfig.cache
+C:\Users\CarolineSouza\Documents\calculator_csharp\obj\Debug\net6.0\ref\calculator_csharp.dll
