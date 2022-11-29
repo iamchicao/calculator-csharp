@@ -7,8 +7,8 @@ namespace CalculatorCsharp
         public static void Start()
         {
             int calculator;
-            decimal number1;
-            decimal number2;
+            double number1 = 0;
+            double number2 = 0;
 
             Console.WriteLine("CALCULATORS");
             Console.WriteLine("--------------------------");
@@ -24,22 +24,26 @@ namespace CalculatorCsharp
 
             } while (calculator <= 0 || calculator > 3);
 
-            Console.WriteLine("\nEnter the first number: ");
-            number1 = Convert.ToDecimal(Console.ReadLine());
 
-            Console.WriteLine("Enter the second number: ");
-            number2 = Convert.ToDecimal(Console.ReadLine());
+            if (calculator == 1)
+            {
+                Console.WriteLine("\nEnter the first number: ");
+                number1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter the second number: ");
+                number2 = Convert.ToDouble(Console.ReadLine());
+            }
 
             switch (calculator)
             {
                 case 1:
-                    new Basic(number1, number2); //pode passar a expressão interia como parametro tbm
+                    new Basic(number1, number2); 
                     break;
                 case 2:
-                    new Scientific(number1, number2);
+                    new Scientific();
                     break;
                 case 3:
-                    new Financial(number1, number2);
+                    new Financial();
                     break;
                 default:
                     Console.WriteLine("Invalid number of calculator!");
