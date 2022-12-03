@@ -9,7 +9,7 @@
 
     /*
     Financial calculator calls the basic calculator constructor
-    Before that, the method Open is invoked, bringing the dictionary for the operations
+    Before that, the method Open is invoked, bringing the dictionary for the operations and the result of operation choosed
     */
     public Financial() : base()
     {
@@ -19,37 +19,38 @@
     public override void Open()
     {
       Dictionary<int, string> financialOperations = new Dictionary<int, string>()
-            {
-                {5, "Simple Interest"},
-                {6, "Compound Interest"}
-            };
+      {
+          {5, "Simple Interest"},
+          {6, "Compound Interest"}
+      };
 
-      foreach (KeyValuePair<int, string> i in financialOperations)
+      foreach (KeyValuePair<int, string> i in financialOperations) //add financialOperations to MathOperations
       {
         MathOperations.Add(i.Key, i.Value);
       }
 
-      foreach (KeyValuePair<int, string> operation in MathOperations)
+      foreach (KeyValuePair<int, string> mathOperation in MathOperations)
       {
-        Console.WriteLine($"{operation.Key} - {operation.Value}");
+        Console.WriteLine($"{mathOperation.Key} - {mathOperation.Value}");
       }
 
-      int data;
+      int operation;
 
       //Run while the user does not enter a valid number(1 to 6) and 0 to exit
       do
       {
         Console.WriteLine("\nWhich operation do you want realize?");
-        data = Convert.ToInt32(Console.ReadLine());
+        operation = Convert.ToInt32(Console.ReadLine());
 
-        if (data == 0) 
+        if (operation == 0) 
         {
           Console.WriteLine("Calculator closed!!");
           return;
         }
-      } while (data < 1 || data > 6);
+      } while (operation < 1 || operation > 6);
 
-      if (data == 1 || data == 2 || data == 3 || data == 4)
+      //opens the method of each operation:
+      if (operation == 1 || operation == 2 || operation == 3 || operation == 4)
       {
         Console.WriteLine("\nEnter the first number: ");
         Number1 = Convert.ToDouble(Console.ReadLine());
@@ -57,7 +58,7 @@
         Console.WriteLine("\nEnter the second number: ");
         Number2 = Convert.ToDouble(Console.ReadLine());
 
-        switch (data)
+        switch (operation)
         {
           case 1:
             Addition();
@@ -84,7 +85,7 @@
         Console.WriteLine("\nEnter the period: ");
         Period = Convert.ToInt32(Console.ReadLine());
 
-        switch (data)
+        switch (operation)
         {
           case 5:
             SimpleInterest();
@@ -95,13 +96,14 @@
         }
       }
 
-      if (data == 1 || data == 2 || data == 3 || data == 4)
+      if (operation == 1 || operation == 2 || operation == 3 || operation == 4)
       {
           Console.WriteLine("\nThe result of operatios is " + Result.ToString("0.##"));
       }
       Console.WriteLine($"Enter any key to close");
     }
 
+    //Method to calculate the simple interest
     public void SimpleInterest()
     {
       Result = InitialValue * (InterestRate / 100) * Period;
@@ -109,6 +111,7 @@
       Console.WriteLine("Total to pay is " + (Result + InitialValue).ToString("0.##"));
     }
 
+    //Method to calculate the compound interest
     public void CompoundInterest()
     {
       Result = InitialValue * Math.Pow((1 + (InterestRate / 100)), Period);

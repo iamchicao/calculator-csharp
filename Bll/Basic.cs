@@ -2,7 +2,7 @@
 {
   internal class Basic
   {
-    //Declare public variables kind of float
+    //Declare public variables 
     public double Number1;
     public double Number2;
     public double Result;
@@ -18,7 +18,6 @@
         };
 
     //Constructors for Polymorphism treatment:
-
     //public Constructor of double type
     public Basic(double number1, double number2)
     {
@@ -57,32 +56,29 @@
 
     public Basic() { }
 
-    /*
-    Method to open the calculator: print the menu, according to the dictionary using switch case
-    Print the result of operation
-    */
+    // Method to open the calculator: print the menu and the result of operation choosed
     public virtual void Open()
     {
-      foreach (KeyValuePair<int, string> operation in MathOperations)
+      foreach (KeyValuePair<int, string> mathOperation in MathOperations) //print the Math Operations declared at dictionary
       {
-        Console.WriteLine($"{operation.Key} - {operation.Value}");
+        Console.WriteLine($"{mathOperation.Key} - {mathOperation.Value}");
       }
 
-      int data;
+      int operation;
       do
       {
           Console.WriteLine("\nWhich operation do you want realize?");
-          data = Convert.ToInt32(Console.ReadLine());
+          operation = Convert.ToInt32(Console.ReadLine());
           
-          if (data == 0)
+          if (operation == 0)
           {
             Console.WriteLine("Calculator closed!!");
             return;
           }
-      } while (data < 1 || data > 6);
+      } while (operation < 1 || operation > 6);
       
 
-      switch (data)
+      switch (operation) //opens the method of each operation
       {
         case 1:
           Addition();

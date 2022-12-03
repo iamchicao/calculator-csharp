@@ -8,8 +8,8 @@ namespace CalculatorCsharp
     {
       //declare variables and intialize
       int calculator;
-      var number1 = 0.0; //0 (integer)
-      var number2 = 0.0; //0 (integer)
+      var number1 = 0.0; 
+      var number2 = 0.0; 
 
       //Print the menu for the user to choose the calculator
       Console.WriteLine("CALCULATORS");
@@ -19,7 +19,7 @@ namespace CalculatorCsharp
       Console.WriteLine("3) Financial");
       Console.WriteLine("--------------------------");
 
-      //If the user enters a value other than 1, 2 or 3, the program will ask to enter again
+      //User choose which calculator he wants to use, if he enters a value other than 1, 2 or 3, the program will ask to enter again
       do
       {
         Console.WriteLine("Which calculator do you want to use? (1, 2 or 3)");
@@ -30,9 +30,9 @@ namespace CalculatorCsharp
       //If the user enters 1, the program will ask for the numbers and call the basic calculator
       if (calculator == 1)
       {
-        //Convert the string to double, because console.readline returns a string
+        //Treatment to convert the string to double or int
         Console.WriteLine("\nEnter the first number: ");
-        var aux = Console.ReadLine();
+        var aux = Console.ReadLine(); //return string
         if (aux!.Contains(",") || aux.Contains("."))
         {
           number1 = Convert.ToDouble(aux);
@@ -66,9 +66,6 @@ namespace CalculatorCsharp
           break;
         case 3:
           new Financial();
-          break;
-        default:
-          Console.WriteLine("Invalid number of calculator!");
           break;
       }
     }
