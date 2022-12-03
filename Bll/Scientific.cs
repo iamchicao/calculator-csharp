@@ -38,81 +38,84 @@
         Console.WriteLine($"{operation.Key} - {operation.Value}");
       }
 
-      Console.WriteLine("\nWhich operation do you want realize?");
-      var data = Convert.ToInt32(Console.ReadLine());
+      int data;
 
       //Run while the user does not enter a valid number(1 to 9) and 0 to exit
       do
       {
-        //If the user enter zero, the program will be closed ? (Carol - validar)
+        Console.WriteLine("\nWhich operation do you want realize?");
+        data = Convert.ToInt32(Console.ReadLine());
+
         if (data == 0)
-        {
-          break;
+        { 
+          Console.WriteLine("Calculador closed!!");
+          return;
         }
+      } while (data < 1 || data > 9);
 
-        //If the user enters a number between 1 and 4, the basic calculator is called
-        if (data == 1 || data == 2 || data == 3 || data == 4)
+      //If the user enters a number between 1 and 4, the basic calculator is called
+      if (data == 1 || data == 2 || data == 3 || data == 4)
+      {
+        Console.WriteLine("\nEnter the first number: ");
+        Number1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("\nEnter the second number: ");
+        Number2 = Convert.ToDouble(Console.ReadLine());
+
+        switch (data)
         {
-          Console.WriteLine("\nEnter the first number: ");
-          Number1 = Convert.ToDouble(Console.ReadLine());
-
-          Console.WriteLine("\nEnter the second number: ");
-          Number2 = Convert.ToDouble(Console.ReadLine());
-
-          switch (data)
-          {
-            case 1:
-              Addition();
-              break;
-            case 2:
-              Subtraction();
-              break;
-            case 3:
-              Multiplication();
-              break;
-            case 4:
-              Division();
-              break;
-          }
+          case 1:
+            Addition();
+            break;
+          case 2:
+            Subtraction();
+            break;
+          case 3:
+            Multiplication();
+            break;
+          case 4:
+            Division();
+            break;
         }
-        else if (data == 5)
+      }
+      else if (data == 5)
+      {
+        Console.WriteLine("\nEnter the number base: ");
+        NumberBase = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("\nEnter the exponential number: ");
+        Exponential = Convert.ToInt32(Console.ReadLine());
+
+        Exponentiation();
+      }
+      else if (data == 6)
+      {
+        Console.WriteLine("\nEnter the number: ");
+        Number1 = Convert.ToDouble(Console.ReadLine());
+
+        SquareRoot();
+      }
+      else
+      {
+        Console.WriteLine("\nEnter the angle: ");
+        Angle = Convert.ToDouble(Console.ReadLine());
+
+        switch (data)
         {
-          Console.WriteLine("\nEnter the number base: ");
-          NumberBase = Convert.ToDouble(Console.ReadLine());
-
-          Console.WriteLine("\nEnter the exponential number: ");
-          Exponential = Convert.ToInt32(Console.ReadLine());
-
-          Exponentiation();
+          case 7:
+            Sin();
+            break;
+          case 8:
+            Cos();
+            break;
+          case 9:
+            Tangent();
+            break;
         }
-        else if (data == 6)
-        {
-          Console.WriteLine("\nEnter the number: ");
-          Number1 = Convert.ToDouble(Console.ReadLine());
+      }
 
-          SquareRoot();
-        }
-        else
-        {
-          Console.WriteLine("\nEnter the angle: ");
-          Angle = Convert.ToDouble(Console.ReadLine());
-
-          switch (data)
-          {
-            case 7:
-              Sin();
-              break;
-            case 8:
-              Cos();
-              break;
-            case 9:
-              Tangent();
-              break;
-          }
-        }
-
-        Console.WriteLine($"Result = {Result}");
-      } while (data <= 0 || data > 9);
+      Console.WriteLine("\nThe result of operatios is " + Result.ToString("0.##"));
+      Console.WriteLine($"Enter any key to close");
     }
 
     public void Exponentiation()

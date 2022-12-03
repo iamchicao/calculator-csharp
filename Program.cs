@@ -3,3 +3,4 @@ using CalculatorCsharp;
 
 //call the method to start the application
 Main.Start();
+Console.Read();
