@@ -48,7 +48,7 @@
 
         if (data == 0)
         { 
-          Console.WriteLine("Calculador closed!!");
+          Console.WriteLine("Calculator closed!!");
           return;
         }
       } while (data < 1 || data > 9);
